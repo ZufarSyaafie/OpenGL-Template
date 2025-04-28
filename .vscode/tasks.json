@@ -1,0 +1,37 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Build Project",
+            "command": "C:/Program Files/mingw64/bin/g++.exe",
+            "args": [
+                "-g",
+                "-std=c++17",
+                "-mwindows",
+                "-I${workspaceFolder}/include",
+                "-I${workspaceFolder}/include/glad",
+                "-I${workspaceFolder}/include/GLFW",
+                "-I${workspaceFolder}/include/glm",
+                "-L${workspaceFolder}/lib",
+                "${workspaceFolder}/src/main.cpp",
+                "${workspaceFolder}/src/glad.c",
+                "-lglfw3dll",
+                "-lopengl32",
+                "-o",
+                "${workspaceFolder}/main.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "compiler: C:/Program Files/mingw64/bin/g++.exe"
+        }
+    ]
+}
