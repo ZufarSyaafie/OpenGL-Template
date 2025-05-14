@@ -18,6 +18,7 @@
                 "${workspaceFolder}/src/glad.c",
                 "-lglfw3dll",
                 "-lopengl32",
+                "-lgdi32",
                 "-o",
                 "${workspaceFolder}/main.exe"
             ],
